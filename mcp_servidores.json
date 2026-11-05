@@ -1,0 +1,20 @@
+{
+  "utilidades": {
+    "activo": true,
+    "confiable": true,
+    "command": "python",
+    "args": [
+      "servidor_mcp_ejemplo.py"
+    ]
+  },
+  "archivos": {
+    "activo": false,
+    "confiable": true,
+    "command": "npx",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "documentos"
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "pregunta": "¿Cuánto me devuelven si cancelo 20 días antes del viaje?",
+    "respuesta": "Se reembolsa el 50% del importe, porque cancela entre 30 y 15 días antes.",
+    "debe_contener": [
+      "50"
+    ],
+    "en_documento": "Entre 30 y 15 días antes del viaje"
+  },
+  {
+    "pregunta": "¿Me devuelven la plata si me arrepiento una semana antes de salir?",
+    "respuesta": "No hay reembolso con menos de 15 días de anticipación; solo puede cambiar la fecha una vez pagando un recargo de 40 dólares.",
+    "debe_contener": [
+      "no hay reembolso|sin reembolso|no te devuelven|no se devuelve|no corresponde reembolso|no hay devolucion|no tenes reembolso|no se reembolsa|no recibis reembolso|no te reembolsan",
+      "40"
+    ],
+    "en_documento": "Con menos de 15 días de anticipación no hay reembolso",
+    "no_debe_contener": [
+      "te devuelven el 50",
+      "te devuelven el 100"
+    ]
+  },
+  {
+    "pregunta": "¿Cuántos puntos necesito para una noche de hotel gratis?",
+    "respuesta": "5.000 puntos Nube.",
+    "debe_contener": [
+      "5000"
+    ],
+    "en_documento": "Con 5.000 puntos se obtiene una noche de hotel gratis"
+  },
+  {
+    "pregunta": "Si gasto 3000 dólares en un paquete, ¿cuántos puntos Nube sumo?",
+    "respuesta": "6.000 puntos (2 puntos por dólar).",
+    "debe_contener": [
+      "6000"
+    ],
+    "en_documento": "Por cada dólar gastado el cliente suma 2 puntos Nube"
+  },
+  {
+    "pregunta": "¿Qué incluye el paquete a Cartagena?",
+    "respuesta": "Incluye el traslado desde el aeropuerto sin costo adicional.",
+    "debe_contener": [
+      "traslado"
+    ],
+    "en_documento": "Los paquetes a Cartagena incluyen traslado"
+  },
+  {
+    "pregunta": "¿Cuánto puede pesar mi valija?",
+    "respuesta": "Hasta 23 kg la valija y hasta 8 kg el bolso de mano.",
+    "debe_contener": [
+      "23"
+    ],
+    "en_documento": "una valija de hasta 23 kg"
+  },
+  {
+    "pregunta": "¿Cuánto pago por llevar dos valijas extra en un viaje de ida y vuelta?",
+    "respuesta": "220 dólares: 55 dólares por valija y por tramo, 2 valijas por 2 tramos.",
+    "debe_contener": [
+      "220"
+    ],
+    "en_documento": "Cada valija adicional cuesta 55 dólares por tramo"
+  },
+  {
+    "pregunta": "Quiero llevar mi bicicleta, ¿tengo que avisar algo?",
+    "respuesta": "Sí, el equipaje deportivo debe avisarse con al menos 72 horas de anticipación.",
+    "debe_contener": [
+      "72"
+    ],
+    "en_documento": "debe avisarse con al menos 72 horas de anticipación"
+  },
+  {
+    "pregunta": "¿Qué promoción hay para viajar a Lisboa?",
+    "respuesta": "15% de descuento reservando antes del 31 de marzo.",
+    "debe_contener": [
+      "15"
+    ],
+    "en_documento": "Para Lisboa hay una promoción de 15% de descuento"
+  },
+  {
+    "pregunta": "¿A qué hora abren la oficina los sábados?",
+    "respuesta": "Los sábados atienden de 10:00 a 14:00.",
+    "debe_contener": [
+      "10",
+      "14"
+    ],
+    "en_documento": "los sábados de 10:00 a 14:00"
+  },
+  {
+    "pregunta": "¿Con quién hablo por un problema con mi factura?",
+    "respuesta": "Con Martín Ocampo, interno 4422.",
+    "debe_contener": [
+      "ocampo",
+      "4422"
+    ],
+    "en_documento": "Las consultas sobre facturación se dirigen a Martín Ocampo"
+  },
+  {
+    "pregunta": "Volví de mi viaje hace un mes y quiero quejarme, ¿todavía estoy a tiempo?",
+    "respuesta": "Sí: los reclamos formales se envían por escrito a reclamos@nimboviajes.example dentro de los 60 días posteriores al viaje.",
+    "debe_contener": [
+      "60"
+    ],
+    "en_documento": "dentro de los 60 días posteriores al viaje"
+  },
+  {
+    "pregunta": "Mi paquete a Lisboa cuesta 2000 dólares y reservo en febrero, ¿cuánto pago con la promoción?",
+    "respuesta": "1.700 dólares: tiene 15% de descuento por reservar antes del 31 de marzo.",
+    "debe_contener": [
+      "1700"
+    ],
+    "en_documento": "Para Lisboa hay una promoción de 15% de descuento"
+  },
+  {
+    "pregunta": "Si gasto 2500 dólares, ¿me alcanzan los puntos para una noche de hotel gratis?",
+    "respuesta": "Sí: suma 5.000 puntos (2 por dólar), justo lo que hace falta para una noche de hotel gratis.",
+    "debe_contener": [
+      "5000",
+      "alcanza|justo|exact"
+    ],
+    "en_documento": "Por cada dólar gastado el cliente suma 2 puntos Nube"
+  },
+  {
+    "pregunta": "Hola, tengo una duda con mis puntos Nube: ¿cuándo vencen?",
+    "respuesta": "Vencen a los 24 meses de haberse acreditado.",
+    "debe_contener": [
+      "24"
+    ],
+    "en_documento": "Los puntos vencen a los 24 meses"
+  },
+  {
+    "pregunta": "Mi viaje es dentro de 10 días y quiero cambiar la fecha, ¿cuánto me cobran?",
+    "respuesta": "Con menos de 15 días no hay reembolso, pero puede cambiar la fecha una sola vez pagando un recargo de 40 dólares.",
+    "debe_contener": [
+      "40"
+    ],
+    "en_documento": "cambiar la fecha del viaje una sola vez pagando un recargo de 40 dólares"
+  },
+  {
+    "pregunta": "Estoy de viaje y tuve un problema grave, ¿a qué número llamo?",
+    "respuesta": "A la línea de emergencias para viajeros, que funciona las 24 horas en el interno 4400.",
+    "debe_contener": [
+      "4400"
+    ],
+    "en_documento": "La línea de emergencias para viajeros funciona las 24 horas"
+  },
+  {
+    "pregunta": "Ayudame a redactar un reclamo: en Cartagena el traslado desde el aeropuerto nunca llegó. Viajé del 1 al 5 de octubre de 2026, reserva 1234, me llamo Ana Pérez, ana@ejemplo.com.",
+    "respuesta": "Un reclamo formal con asunto, hechos, pedido y datos de contacto, que se envía por escrito a reclamos@nimboviajes.example (está dentro de los 60 días).",
+    "debe_contener": [
+      "reclamos@nimboviajes.example"
+    ],
+    "en_documento": "Los reclamos formales deben enviarse por escrito a reclamos@nimboviajes.example"
+  },
+  {
+    "pregunta": "¿Me conviene más Lisboa o Cartagena si quiero ahorrar?",
+    "respuesta": "Lisboa tiene 15% de descuento reservando antes del 31 de marzo; los paquetes a Cartagena incluyen el traslado desde el aeropuerto sin costo. Depende de la fecha de reserva.",
+    "debe_contener": [
+      "15",
+      "traslado"
+    ],
+    "en_documento": "Para Lisboa hay una promoción de 15% de descuento"
+  },
+  {
+    "pregunta": "¿Cuánto me devuelven si cancelo 45 días antes y pagué 1200 dólares?",
+    "respuesta": "El 100%: 1.200 dólares, por cancelar con más de 30 días de anticipación.",
+    "debe_contener": [
+      "1200",
+      "100"
+    ],
+    "en_documento": "Si el cliente cancela con más de 30 días de anticipación, se le reembolsa el 100%"
+  },
+  {
+    "pregunta": "¿Puedo viajar a Uruguay solo con el DNI?",
+    "respuesta": "Sí: para los países del Mercosur alcanza con el DNI vigente.",
+    "debe_contener": [
+      "dni",
+      "mercosur"
+    ],
+    "en_documento": "Para países del Mercosur también se puede viajar con DNI"
+  },
+  {
+    "pregunta": "¿Cuántas horas antes tengo que estar en Ezeiza para un vuelo a Lisboa?",
+    "respuesta": "Para vuelos internacionales hay que llegar 3 horas antes de la salida.",
+    "debe_contener": [
+      "3"
+    ],
+    "en_documento": "para vuelos internacionales, 3 horas antes"
+  },
+  {
+    "pregunta": "¿Puedo llevar a mi gata en el avión conmigo?",
+    "respuesta": "Sí, si pesa hasta 8 kg viaja en cabina en un bolso transportador; el cargo es de 70 dólares por tramo y hace falta certificado de vacuna antirrábica.",
+    "debe_contener": [
+      "8",
+      "70"
+    ],
+    "en_documento": "Se aceptan perros y gatos de hasta 8 kg en cabina"
+  },
+  {
+    "pregunta": "Somos 12 compañeros de trabajo y queremos viajar juntos, ¿hay algún beneficio?",
+    "respuesta": "Sí: los grupos de 10 personas o más tienen un 8% de descuento y un coordinador que los acompaña.",
+    "debe_contener": [
+      "8",
+      "coordinador"
+    ],
+    "en_documento": "Los grupos de 10 personas o más tienen un 8% de descuento"
+  }
+]

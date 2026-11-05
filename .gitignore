@@ -1,0 +1,23 @@
+# Secretos
+.env
+
+# Entorno y caché de Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Archivos que generan los chatbots al correr (ver "Archivos que genera" en el README)
+memoria.json
+memoria_v*.json
+memoria*.danado.json
+registro.jsonl
+notas.json
+embeddings_cache.json
+salida/
+bandeja_salida/
+recordatorios.txt
+mcp_servidores.log
+progreso_tarea.json

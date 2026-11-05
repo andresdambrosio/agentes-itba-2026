@@ -1,0 +1,11 @@
+# Necesita Python 3.10 o más nuevo.
+
+# Todas las versiones
+anthropic>=1.17
+
+# v19: servidores MCP (también lo usa servidor_mcp_ejemplo.py)
+mcp>=2.3
+
+# v17 (opcional): búsqueda por significado con embeddings de Voyage AI.
+# Sin VOYAGE_API_KEY la v17 usa la búsqueda por palabras clave de la v07.
+voyageai>=0.3
